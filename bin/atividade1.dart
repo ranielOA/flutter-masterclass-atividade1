@@ -71,6 +71,6 @@ void calcIMC() {
 }
 
 void main(List<String> arguments) {
-  // calcIMC();
+  calcIMC();
   calcFibonacci();
 }
