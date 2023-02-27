@@ -26,15 +26,11 @@ List<int> createFibonacciSequence1(int fibSeqSize) {
 
   if (fibSeqSize > 0) {
     list = createFibonacciSequence1(fibSeqSize);
-
-    list.add(fibonacci(fibSeqSize));
-
-    return list;
-  } else {
-    list.add(fibonacci(fibSeqSize));
-
-    return list;
   }
+
+  list.add(fibonacci(fibSeqSize));
+
+  return list;
 }
 
 void calcFibonacci() {
