@@ -23,18 +23,13 @@ double ruleOfThree(
 
 void calcRuleOfThree() {
   print('digite o primeiro valor da primeira coluna: ');
-  String value11Input = stdin.readLineSync() ?? '';
+  double? value11 = double.tryParse(stdin.readLineSync() ?? '');
   print('digite o segundo valor da primeira coluna: ');
-  String value12Input = stdin.readLineSync() ?? '';
+  double? value12 = double.tryParse(stdin.readLineSync() ?? '');
   print('digite o primeiro valor da segunda coluna: ');
-  String value21Input = stdin.readLineSync() ?? '';
+  double? value21 = double.tryParse(stdin.readLineSync() ?? '');
   print('digite o segundo valor da segunda coluna: ');
-  String value22Input = stdin.readLineSync() ?? '';
-
-  double? value11 = value11Input.isEmpty ? null : double.tryParse(value11Input);
-  double? value12 = value12Input.isEmpty ? null : double.tryParse(value12Input);
-  double? value21 = value21Input.isEmpty ? null : double.tryParse(value21Input);
-  double? value22 = value22Input.isEmpty ? null : double.tryParse(value22Input);
+  double? value22 = double.tryParse(stdin.readLineSync() ?? '');
 
   double result = ruleOfThree(value11, value12, value21, value22);
 
